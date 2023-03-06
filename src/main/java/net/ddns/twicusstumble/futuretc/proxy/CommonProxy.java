@@ -28,7 +28,7 @@ public abstract class CommonProxy {
 
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
-        ItemInit.ITEMS.forEach(f -> f.registerItem(event));
+        ItemInit.ITEM_BLOCKS.forEach(f -> event.getRegistry().register(f));
     }
 
     @SubscribeEvent

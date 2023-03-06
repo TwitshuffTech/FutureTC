@@ -14,7 +14,6 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public void registerModels(ModelRegistryEvent event) {
-        ItemInit.ITEMS.forEach(f -> f.registerModel(event));
         BlockInit.BLOCKS.forEach(f -> f.registerModel(event));
     }
 }
