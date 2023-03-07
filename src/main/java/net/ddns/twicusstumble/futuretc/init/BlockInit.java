@@ -28,6 +28,6 @@ public class BlockInit {
     public static final Block RED_NETHER_BRICKS_STAIRS = new BlockStairBase("red_nether_bricks_stairs", Blocks.RED_NETHER_BRICK.getDefaultState(), 2.0F, 10.0F, SoundType.STONE);
     public static final Block END_STONE_BRICKS_STAIRS = new BlockStairBase("end_stone_bricks_stairs", Blocks.END_BRICKS.getDefaultState(), 2.0F, 10.0F, SoundType.STONE);
 
-    public static final Block DOUBLE_STONE_SLAB = new BlockSlabBase.Double("double_stone_slab", (BlockSlabBase) BlockInit.STONE_SLAB, 2.0F, 10.0F, SoundType.STONE);
-    public static final Block STONE_SLAB = new BlockSlabBase.Half("stone_slab", (BlockSlabBase) BlockInit.STONE_SLAB, (BlockSlabBase) BlockInit.DOUBLE_STONE_SLAB, 2.0F, 10.0F, SoundType.STONE);
+    public static final BlockSlab DOUBLE_STONE_SLAB = new BlockSlabBase.Double("double_stone_slab", 0, 2.0F, 10.0F, SoundType.STONE);
+    public static final BlockSlab STONE_SLAB = new BlockSlabBase.Half("stone_slab", 0, BlockInit.DOUBLE_STONE_SLAB, 2.0F, 10.0F, SoundType.STONE);
 }

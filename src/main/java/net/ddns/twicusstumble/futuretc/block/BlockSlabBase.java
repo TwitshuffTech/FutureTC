@@ -29,14 +29,14 @@ import java.util.Random;
 
 public abstract class BlockSlabBase extends BlockSlab implements IBlockRegisterEvent {
     protected String name;
-    protected BlockSlabBase halfSlab;
+    protected int id;
 
     public static final PropertyEnum<Variant> VARIANT = PropertyEnum.<Variant>create("variant", Variant.class);
 
-    public BlockSlabBase(String name, BlockSlabBase halfSlab, float hardness, float resistance, SoundType sound) {
+    public BlockSlabBase(String name, int id, float hardness, float resistance, SoundType sound) {
         super(Material.ROCK);
         this.name = name;
-        this.halfSlab = halfSlab;
+        this.id = id;
 
         this.setTranslationKey(this.name);
         this.setRegistryName(FutureTC.MOD_ID, this.name);
@@ -74,7 +74,7 @@ public abstract class BlockSlabBase extends BlockSlab implements IBlockRegisterE
 
     @Override
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
-        return new ItemStack(halfSlab);
+        return new ItemStack(getHalfSlabById(id));
     }
 
     @Override
@@ -101,7 +101,7 @@ public abstract class BlockSlabBase extends BlockSlab implements IBlockRegisterE
 
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return Item.getItemFromBlock(halfSlab);
+        return Item.getItemFromBlock(getHalfSlabById(id));
     }
 
     @Override
@@ -109,9 +109,18 @@ public abstract class BlockSlabBase extends BlockSlab implements IBlockRegisterE
         return this.isDouble() ? new BlockStateContainer(this, new IProperty[] {VARIANT}) : new BlockStateContainer(this, new IProperty[] {HALF, VARIANT});
     }
 
+    protected BlockSlab getHalfSlabById(int id) {
+        switch (id) {
+            case 0:
+                return BlockInit.STONE_SLAB;
+            default:
+                return getHalfSlabById(0);
+        }
+    }
+
     public static class Double extends BlockSlabBase {
-        public Double(String name, BlockSlabBase halfSlab, float hardness, float resistance, SoundType sound) {
-            super(name, halfSlab, hardness, resistance, sound);
+        public Double(String name, int id, float hardness, float resistance, SoundType sound) {
+            super(name, id, hardness, resistance, sound);
         }
 
         public boolean isDouble() {
@@ -120,8 +129,8 @@ public abstract class BlockSlabBase extends BlockSlab implements IBlockRegisterE
     }
 
     public static class Half extends BlockSlabBase {
-        public Half(String name, BlockSlabBase halfSlab, BlockSlabBase doubleSlab, float hardness, float resistance, SoundType sound) {
-            super(name, halfSlab, hardness, resistance, sound);
+        public Half(String name, int id, BlockSlab doubleSlab, float hardness, float resistance, SoundType sound) {
+            super(name, id, hardness, resistance, sound);
 
             ItemInit.ITEM_BLOCKS.add(new ItemSlab(this, this, doubleSlab).setRegistryName(this.getRegistryName()));
         }
