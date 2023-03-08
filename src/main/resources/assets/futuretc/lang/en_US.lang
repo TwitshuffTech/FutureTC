@@ -1,0 +1,27 @@
+tile.andesite_stairs.name=Andesite Stairs
+tile.diorite_stairs.name=Diorite Stairs
+tile.end_stone_bricks_stairs.name=End Stone Brick Stairs
+tile.granite_stairs.name=Granite Stairs
+tile.mossy_stone_bricks_stairs.name=Mossy Stone Brick Stairs
+tile.mossy_stone_stairs.name=Smooth Sandstone Stairs
+tile.polished_andesite_stairs.name=Polished Andesite Stairs
+tile.polished_diorite_stairs.name=Polished Diorite Stairs
+tile.polished_granite_stairs.name=Polished Granite Stairs
+tile.red_nether_bricks_stairs.name=Red Nether Brick Stairs
+tile.smooth_red_sandstone_stairs.name=Smooth Red Sandstone Stairs
+tile.smooth_sandstone_stairs.name=Smooth Sandstone Stairs
+tile.stone_stairs.name=Stone Stairs
+
+tile.andesite_slab.name=Andesite Slab
+tile.diorite_slab.name=Diorite Slab
+tile.end_stone_bricks_slab.name=End Stone Brick Slab
+tile.granite_slab.name=Granite Slab
+tile.mossy_stone_bricks_slab.name=Mossy Stone Brick Slab
+tile.mossy_stone_slab.name=Mossy Cobblestone Slab
+tile.polished_andesite_slab.name=Polished Andesite Slab
+tile.polished_diorite_slab.name=Polished Diorite Slab
+tile.polished_granite_slab.name=Polished Granite Slab
+tile.red_nether_bricks_slab.name=Red Nether Brick Slab
+tile.smooth_red_sandstone_slab.name=Smooth Red Sandstone Slab
+tile.smooth_sandstone_slab.name=Smooth Sandstone Slab
+tile.stone_slab.name=Stone Slab
