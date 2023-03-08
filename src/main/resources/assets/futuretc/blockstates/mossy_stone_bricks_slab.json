@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom,variant=default": { "model": "futuretc:half_slab_mossy_stone_bricks" },
+        "half=top,variant=default": { "model": "futuretc:upper_slab_mossy_stone_bricks" }
+    }
+}

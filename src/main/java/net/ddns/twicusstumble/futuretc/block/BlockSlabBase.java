@@ -113,6 +113,30 @@ public abstract class BlockSlabBase extends BlockSlab implements IBlockRegisterE
         switch (id) {
             case 0:
                 return BlockInit.STONE_SLAB;
+            case 1:
+                return BlockInit.GRANITE_SLAB;
+            case 2:
+                return BlockInit.POLISHED_GRANITE_SLAB;
+            case 3:
+                return BlockInit.DIORITE_SLAB;
+            case 4:
+                return BlockInit.POLISHED_DIORITE_SLAB;
+            case 5:
+                return BlockInit.ANDESITE_SLAB;
+            case 6:
+                return BlockInit.POLISHED_ANDESITE_SLAB;
+            case 7:
+                return BlockInit.MOSSY_STONE_BRICKS_SLAB;
+            case 8:
+                return BlockInit.MOSSY_STONE_SLAB;
+            case 9:
+                return BlockInit.SMOOTH_SANDSTONE_SLAB;
+            case 10:
+                return BlockInit.SMOOTH_RED_SANDSTONE_SLAB;
+            case 11:
+                return BlockInit.RED_NETHER_BRICKS_SLAB;
+            case 12:
+                return BlockInit.END_STONE_BRICKS_SLAB;
             default:
                 return getHalfSlabById(0);
         }

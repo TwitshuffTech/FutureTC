@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom,variant=default": { "model": "futuretc:half_slab_polished_andesite" },
+        "half=top,variant=default": { "model": "futuretc:upper_slab_polished_andesite" }
+    }
+}
