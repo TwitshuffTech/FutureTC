@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stonebrick",
+      "data": 1
+    }
+  },
+  "result": {
+    "item": "futuretc:mossy_stone_bricks_stairs",
+    "count": 4
+  }
+}

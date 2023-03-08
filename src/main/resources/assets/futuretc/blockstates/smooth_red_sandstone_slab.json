@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom,variant=default": { "model": "futuretc:half_slab_smooth_red_sandstone" },
+        "half=top,variant=default": { "model": "futuretc:upper_slab_smooth_red_sandstone" }
+    }
+}
