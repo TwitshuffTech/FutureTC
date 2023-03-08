@@ -3,11 +3,14 @@ package net.ddns.twicusstumble.futuretc.proxy;
 import net.ddns.twicusstumble.futuretc.FutureTC;
 import net.ddns.twicusstumble.futuretc.init.BlockInit;
 import net.ddns.twicusstumble.futuretc.init.ItemInit;
+import net.ddns.twicusstumble.futuretc.util.CraftingHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemSlab;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -22,7 +25,7 @@ public abstract class CommonProxy {
     }
 
     public void init(FMLInitializationEvent event) {
-
+        CraftingHandler.replaceRecipes("minecraft:stone_slab", new ItemStack(BlockInit.STONE_SLAB, 6, 0));
     }
 
     public void postInit(FMLPostInitializationEvent event) {

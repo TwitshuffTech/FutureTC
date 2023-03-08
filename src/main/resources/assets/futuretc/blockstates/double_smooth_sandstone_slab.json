@@ -1,5 +1,5 @@
 {
     "variants": {
-        "variant=default": { "model": "sandstone_normal" }
+        "variant=default": { "model": "futuretc:smooth_sandstone" }
     }
 }

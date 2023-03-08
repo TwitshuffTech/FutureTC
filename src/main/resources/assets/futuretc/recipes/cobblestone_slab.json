@@ -5,12 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:stone",
-      "data": 0
+      "item": "futuremc:smooth_stone"
     }
   },
   "result": {
-    "item": "futuretc:stone_slab",
+    "item": "minecraft:stone_slab",
     "data": 0,
     "count": 6
   }

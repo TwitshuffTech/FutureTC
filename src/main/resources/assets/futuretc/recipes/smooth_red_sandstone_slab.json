@@ -5,12 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:red_sandstone",
-      "data": 2
+      "item": "futuremc:smooth_red_sandstone"
     }
   },
   "result": {
-    "item": "futuretc:smooth_sandstone_slab",
+    "item": "futuretc:smooth_red_sandstone_slab",
     "data": 0,
     "count": 6
   }

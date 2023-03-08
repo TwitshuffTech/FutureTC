@@ -5,8 +5,7 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:sandstone",
-      "data": 2
+      "item": "futuremc:smooth_sandstone"
     }
   },
   "result": {
